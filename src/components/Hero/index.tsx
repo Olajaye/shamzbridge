@@ -1,8 +1,7 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-type Props = {}
 
-const Hero = (props: Props) => {
+const Hero = () => {
   return (
     
     <section className="bg-primary text-white h-screen flex items-center justify-center"  style={{ backgroundImage: "url('/src/assets/hero.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}>

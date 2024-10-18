@@ -1,10 +1,8 @@
 import React from 'react'
 import { Services } from './constant'
 
-type Props = {}
 
-
-const Service = (props: Props) => {
+const Service = () => {
   return (
     <section id="services" className="py-20 text-center bg-white px-5 md:px-10">
       <h2 className="text-primary text-3xl font-bold">Our Services</h2>

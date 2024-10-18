@@ -5,9 +5,9 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { CiMenuFries } from "react-icons/ci";
 
-type Props = {}
 
-const Navbar  = (props: Props) => {
+
+const Navbar  = () => {
   const [openMenu, setOpenMeanu]=useState(false)
   return (
     <nav className="bg-secondary text-white p-4 fixed w-[100%] top-0">

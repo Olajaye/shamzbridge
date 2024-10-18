@@ -1,9 +1,9 @@
 // import { motion } from 'framer-motion';
-import {motion} from "framer-motion"
 
-type Props = {}
 
-const About = (props: Props) => {
+
+
+const About = () => {
   return (
     <section id="about" className="py-20 text-center bg-slate-100">
       {/* <motion.h2 

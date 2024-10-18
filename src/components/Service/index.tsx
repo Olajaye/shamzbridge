@@ -35,8 +35,6 @@ const Service = () => {
             <p className='text-grayText mt-3'>{service.text}</p>
           </motion.div>))
         }
-        
-       
       </div>
     </section>
   )

@@ -1,23 +1,28 @@
 "use client"
+import { assets } from '@/assets/assets'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import React from 'react'
 
 
 const Hero = () => {
   return (
-    
-    <section className="bg-primary text-white h-screen flex items-center justify-center">
-      <motion.h1 
-      className="text-5xl font-bold text-center"
-      initial={{ opacity: 0, y: -50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
+    <section className="text-white md:h-screen mt-16">
+      <motion.div
+      initial={{ opacity: 0, scale: 0, x:-100 }}
+      
+      whileInView={{ opacity: 1,  
+        scale: [0.9, 1, 1, 0.8, 1],
+        x:0,
+        borderRadius: ["20%", "50%", "50%", "50%", "20%"],
+        
+      }}
+      transition={{ duration: 2, repeat: Infinity, 
+        repeatType: 'reverse', }}
       >
-        Empowering Your Workforce
-      </motion.h1>
+       <Image src={assets.Hero} alt='Hero' className='w-[100%] md:h-screen'/>
+      </motion.div>
     </section>
-    
-   
   )
 }
 

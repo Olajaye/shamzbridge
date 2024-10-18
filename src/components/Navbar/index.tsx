@@ -11,7 +11,7 @@ import { CiMenuFries } from "react-icons/ci";
 const Navbar  = () => {
   const [openMenu, setOpenMeanu]=useState(false)
   return (
-    <nav className="bg-secondary text-white p-4 fixed w-[100%] top-0">
+    <nav className="bg-secondary text-white p-4 fixed w-[100%] z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           <Image src={assets.LOGO} alt='Logo' className='w-[250px]'/>

@@ -8,13 +8,13 @@ import { Fragment } from "react";
 
 export default function Home() {
   return (
-    <Fragment>
+    <main className="overflow-x-hidden">
       <Navbar />
       <Hero />
       <About />
       <Service />
       <Footer />
-    </Fragment>
+    </main>
     
   );
 }

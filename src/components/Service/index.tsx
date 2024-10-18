@@ -5,20 +5,23 @@ import { motion } from 'framer-motion'
 
 const Service = () => {
   return (
-    <section id="services" className="py-20 text-center bg-white px-5 md:px-10">
+    <section id="services" className="py-20 text-center bg-primary px-5 md:px-10">
       <motion.h2 
-      className="text-primary text-3xl font-bold"
-      initial={{ opacity: 0, x: -100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1}}
-    >
-      Our Services
-    </motion.h2>
+        className="text-secondary text-3xl font-bold"
+        initial={{ opacity: 0, }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5}}
+      >
+        Our Services
+      </motion.h2>
       <motion.p 
-      initial={{ opacity: 0, x: 100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1}}
-      className='text-grayText'>Explore our diverse offerings and experience unparalleled excellence from tailored solutions to personalized consultations.</motion.p>
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1}}
+        className='text-grayText px-3'
+      >
+        Explore our diverse offerings and experience unparalleled excellence from tailored solutions to personalized consultations.
+      </motion.p>
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-4'>
         {

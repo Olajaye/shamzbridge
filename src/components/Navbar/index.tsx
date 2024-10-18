@@ -7,6 +7,7 @@ import { CiMenuFries } from "react-icons/ci";
 
 
 
+
 const Navbar  = () => {
   const [openMenu, setOpenMeanu]=useState(false)
   return (
@@ -28,14 +29,14 @@ const Navbar  = () => {
         
         
       </div>
-     {openMenu && <ul className="mt-4 space-y-2 text-black">
+     {openMenu && <ul className="mt-4 space-y-2 text-black md:hidden">
         
         <Link href="#about">
           <li className="px-4 font-extrabold">About Us</li>
         </Link>
           
         <Link href="#about">
-            <li className="px-4 font-extrabold">Service</li>
+            <li className="px-4 font-extrabold mt-7">Service</li>
         </Link>
           
       </ul>}
